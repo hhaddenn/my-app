@@ -3,39 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Download My Android App</title>
+  <title>Events4All - Download App</title>
   <style>
+    /* Global styles */
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-      color: #fff;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
+      background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
       margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    /* Card container */
+    .card {
+      background: rgba(255, 255, 255, 0.95);
+      color: #333;
+      padding: 40px 30px;
+      border-radius: 20px;
       text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      max-width: 400px;
+      width: 90%;
+    }
+
+    /* Logo */
+    .logo {
+      width: 120px;
+      height: auto;
+      margin-bottom: 20px;
     }
 
     h1 {
-      font-size: 2.5em;
-      margin-bottom: 20px;
-      text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+      font-size: 2em;
+      margin-bottom: 15px;
     }
 
     p {
-      font-size: 1.2em;
-      margin-bottom: 30px;
+      font-size: 1.1em;
+      margin-bottom: 25px;
     }
 
+    /* Download button */
     a button {
       background-color: #ffce00;
+      color: #333;
       border: none;
-      border-radius: 10px;
       padding: 15px 40px;
       font-size: 1.2em;
-      color: #333;
+      border-radius: 12px;
       cursor: pointer;
       transition: all 0.3s ease;
       box-shadow: 0 5px 15px rgba(0,0,0,0.2);
@@ -47,18 +64,46 @@
     }
 
     footer {
-      margin-top: 50px;
-      font-size: 0.9em;
-      opacity: 0.8;
+      margin-top: 20px;
+      font-size: 0.85em;
+      color: #555;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 480px) {
+      .card {
+        padding: 30px 20px;
+      }
+
+      h1 {
+        font-size: 1.6em;
+      }
+
+      a button {
+        padding: 12px 30px;
+        font-size: 1em;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>Download My Android App</h1>
-  <p>Tap the button below to download the APK.</p>
-  <a href="app-release.apk" download>
-    <button>Download APK</button>
-  </a>
-  <footer>If prompted, allow installation from unknown sources.</footer>
+  <div class="card">
+    <!-- Logo -->
+    <img src="logo.png" alt="Events4All Logo" class="logo">
+
+    <!-- Heading -->
+    <h1>Download Events4All</h1>
+
+    <!-- Description -->
+    <p>Tap the button below to download the latest APK.</p>
+
+    <!-- Download button -->
+    <a href="app-release.apk" download>
+      <button>Download APK</button>
+    </a>
+
+    <!-- Footer note -->
+    <footer>If prompted, allow installation from unknown sources.</footer>
+  </div>
 </body>
 </html>
