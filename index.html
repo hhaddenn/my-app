@@ -1,17 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Download My Android App</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+
+    a button {
+      background-color: #ffce00;
+      border: none;
+      border-radius: 10px;
+      padding: 15px 40px;
+      font-size: 1.2em;
+      color: #333;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    a button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 0.9em;
+      opacity: 0.8;
+    }
+  </style>
 </head>
 <body>
   <h1>Download My Android App</h1>
-  <p>Tap the button below to download:</p>
+  <p>Tap the button below to download the APK.</p>
   <a href="app-release.apk" download>
-    <button style="padding: 12px 20px; font-size: 18px; cursor: pointer;">
-      Download APK
-    </button>
+    <button>Download APK</button>
   </a>
-  <p>If asked, allow installation from unknown sources.</p>
+  <footer>If prompted, allow installation from unknown sources.</footer>
 </body>
 </html>
